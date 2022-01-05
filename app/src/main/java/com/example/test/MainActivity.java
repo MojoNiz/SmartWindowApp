@@ -1,6 +1,8 @@
 package com.example.test;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -32,6 +34,62 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+        //Blind up code to be sent to Arduino
+        Button blindUpBtn = findViewById(R.id.blindUpBtnHome);
+        blindUpBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                blindUpBtn.setText("Clicked");
+            }
+        });
+
+        //Blind down code to be sent to Arduino
+        Button blindDownBtn = findViewById(R.id.blindDownBtnHome);
+        blindDownBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                blindDownBtn.setText("Clicked");
+            }
+        });
+
+        //LED on code to be sent to Arduino
+        Button ledOnBtn = findViewById(R.id.ledBtnOnHome);
+        ledOnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ledOnBtn.setText("Clicked");
+            }
+        });
+
+        //LED off code to be sent to Arduino
+        Button ledOffBtn = findViewById(R.id.ledBtnOffHome);
+        ledOffBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ledOffBtn.setText("Clicked");
+            }
+        });
+
+        //window clear code to be sent to Arduino
+        Button windowOnBtn = findViewById(R.id.windowOpacityBtnOnHome);
+        windowOnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                windowOnBtn.setText("Clicked");
+            }
+        });
+
+        //window opaque code to be sent to Arduino
+        Button windowOffBtn = findViewById(R.id.windowOpacityBtnOffHome);
+        windowOffBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                windowOffBtn.setText("Clicked");
+            }
+        });
+
+
     }
 
 }
