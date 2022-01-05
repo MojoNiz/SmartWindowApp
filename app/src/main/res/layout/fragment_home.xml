@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ui.home.HomeFragment">
+
+    <Button
+        android:id="@+id/windowOpacityBtnOnHome"
+        android:layout_width="133dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="40dp"
+        android:rotationX="0"
+        android:text="Window Clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blindDownBtnHome" />
+
+    <Button
+        android:id="@+id/windowOpacityBtnOffHome"
+        android:layout_width="133dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="48dp"
+        android:text="Window Opaque"
+        app:layout_constraintEnd_toEndOf="@+id/windowOpacityBtnOnHome"
+        app:layout_constraintTop_toBottomOf="@+id/windowOpacityBtnOnHome" />
+
+    <Button
+        android:id="@+id/ledBtnOnHome"
+        android:layout_width="133dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="68dp"
+        android:rotationX="0"
+        android:text="LED ON"
+        app:layout_constraintEnd_toStartOf="@+id/windowOpacityBtnOnHome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blindDownBtnHome" />
+
+    <Button
+        android:id="@+id/ledBtnOffHome"
+        android:layout_width="133dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="48dp"
+        android:text="LED OFF"
+        app:layout_constraintStart_toStartOf="@+id/ledBtnOnHome"
+        app:layout_constraintTop_toBottomOf="@+id/ledBtnOnHome" />
+
+    <Button
+        android:id="@+id/blindUpBtnHome"
+        android:layout_width="176dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="4dp"
+        android:rotationX="0"
+        android:text="Blind Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/blindDownBtnHome"
+        android:layout_width="178dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="40dp"
+        android:text="Blind Down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blindUpBtnHome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
